@@ -1,0 +1,111 @@
+:root {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+  
+  /*--- FONTS ---------------
+  h1{
+  
+  }
+  
+  h2 {
+  
+  }
+  
+  p{
+  
+  }
+  */
+  
+  
+  .main{
+    width:100%;
+  }
+  
+  /*--- SPACING ------------*/
+  .movieList{
+    display:flex;
+    flex-wrap:wrap;
+  }
+  .movieCard{
+    border:1px solid red;
+    width:20%;
+    background-color:#000;
+    color:#fff;
+  }
+  .movieCard a{
+    text-decoration:none;
+    color:inherit;
+  }
+  .movieInfo{
+    padding:20px;
+  }
+  
+  /*--- NAV ------------*/
+  nav ul li{
+    list-style:none;
+  }
+  nav ul li a{
+    text-decoration:none;
+    color:inherit;
+    font-weight:bold;
+    transition: all 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+  }
+  nav ul li a:hover{
+    margin-left:5px;
+  }
+  
+  /*--- MOVIE LIST ------------
+  .list-backgroundImg{
+  
+  }
+  
+  .list-title{
+  
+  }
+  
+  .list-releaseDate{
+  
+  }
+  */
+  
+  
+  
+  
+  /*--- MOVIE PAGE ------------
+    .page-nav{
+  
+    }
+  
+    .page-bgImg{
+  
+    }
+  
+    .page-movieImg{
+  
+    }
+  
+    .page-title{
+  
+    }
+  
+    .page-rating{
+  
+    }
+  
+    .page-description{
+  
+    }
+  
+  */
