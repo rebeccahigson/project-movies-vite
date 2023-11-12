@@ -11,9 +11,6 @@ export const Home = () => {
     /* Popular movies list */
     const moviesUrl = `https://api.themoviedb.org/3/movie/popular?api_key=${ApiKey}&language=en-US&page=1`;
 
-    /* Movie image */
-    const imageUrl = `https://api.themoviedb.org/3/configuration?api_key=${ApiKey}`;
-
 
     const fetchMovies = async () => {
         try {
@@ -44,5 +41,5 @@ export const Home = () => {
         <h1>Loading movies...</h1>
       )}
     </main>
-  )
-}
+  );
+};

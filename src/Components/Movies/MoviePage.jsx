@@ -65,7 +65,7 @@ export const MoviePage = () => {
         {/* Header*/}
         <header className="page-header">
           <nav className="page-Nav">
-            <NavLink to="/">Back</NavLink>
+            <NavLink to="/">« Back</NavLink>
           </nav>
         </header>
 
