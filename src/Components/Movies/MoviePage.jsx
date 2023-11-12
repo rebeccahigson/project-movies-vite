@@ -47,6 +47,8 @@ export const MoviePage = () => {
     return <p>Movie not found</p>;
   }
 
+  
+
 
   const pageBgImg = {
     backgroundImage: `url(${backDropImgUrl}${details.backdrop_path})`,
@@ -54,7 +56,6 @@ export const MoviePage = () => {
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     height: "100vh",
-    ...(windowWidth < 500 && { paddingBottom: "100px" }),
   };
 
   return (
