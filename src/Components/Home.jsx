@@ -1,20 +1,19 @@
 import { useEffect, useState } from "react"
-import { MovieList } from "./MovieList";
-import "./Movies.css";
+import { MovieList } from "./Movies/MovieList";
+//import { apiKey } from "./";
+import "./Movies/Movies.css";
 
-export const Movies = () => {
+export const Home = () => {
     const [loading, setLoading] = useState(false);
     const [movieList, setMovieList] = useState(null);
+    const apiKey = "198feab3a8c5e81858df4a15adb9d161";
 
-    const apiKey = import.meta.env.VITE_OPENDB_KEY;
     /* Popular movies list */
     const moviesUrl = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`;
 
-    /* Movie details */
-    const detailsUrl = `https://api.themoviedb.org/3/movie/{movie_id}?api_key=${apiKey}&language=en-US`;
-
     /* Movie image */
-    const imageUrl = `https://api.themoviedb.org/3/configuration?api_key=${apiKey} `;
+    const imageUrl = `https://api.themoviedb.org/3/configuration?api_key=${apiKey}`;
+
 
     const fetchMovies = async () => {
         try {
@@ -42,7 +41,7 @@ export const Movies = () => {
       {loading ? (
         <MovieList movieList={movieList} />
       ) : (
-        <h1>Loading...</h1>
+        <h1>Loading movies...</h1>
       )}
     </main>
   )
