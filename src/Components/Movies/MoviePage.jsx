@@ -54,6 +54,7 @@ export const MoviePage = () => {
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     height: "100vh",
+    paddingBottom: "80px",
   };
 
   return (
