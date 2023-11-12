@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { ApiKey } from "./ApiKey";
 
 export const MoviePage = () => {
   const { movieId } = useParams();
@@ -12,12 +13,12 @@ export const MoviePage = () => {
   const posterImgUrl = imgUrl + "w500";
   const backDropImgUrl = imgUrl + "w1280";
 
-  const apiKey = import.meta.env.VITE_OPENDB_KEY;
+ //
 
   const details = movieDetails?.title ? movieDetails : null;
 
   /* Movie details */
-  const detailsUrl = `https://api.themoviedb.org/3/movie/${movieId}?api_key=${apiKey}&language=en-US`;
+  const detailsUrl = `https://api.themoviedb.org/3/movie/${movieId}?api_key=${ApiKey}&language=en-US`;
 
   const fetchDetails = async () => {
     try {

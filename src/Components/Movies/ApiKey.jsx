@@ -1,0 +1,1 @@
+export const ApiKey = import.meta.env.VITE_OPENDB_KEY;

@@ -1,18 +1,18 @@
 import { useEffect, useState } from "react"
 import { MovieList } from "./Movies/MovieList";
-//import { apiKey } from "./";
 import "./Movies/Movies.css";
+import { ApiKey } from "./Movies/ApiKey";
 
 export const Home = () => {
     const [loading, setLoading] = useState(false);
     const [movieList, setMovieList] = useState(null);
-    const apiKey = "198feab3a8c5e81858df4a15adb9d161";
+    
 
     /* Popular movies list */
-    const moviesUrl = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US&page=1`;
+    const moviesUrl = `https://api.themoviedb.org/3/movie/popular?api_key=${ApiKey}&language=en-US&page=1`;
 
     /* Movie image */
-    const imageUrl = `https://api.themoviedb.org/3/configuration?api_key=${apiKey}`;
+    const imageUrl = `https://api.themoviedb.org/3/configuration?api_key=${ApiKey}`;
 
 
     const fetchMovies = async () => {
